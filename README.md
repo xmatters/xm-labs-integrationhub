@@ -110,8 +110,9 @@ Now you have a working Connection Alias that we can use to easiliy communicate t
 <img src="media/create input.png">
 </kbd>
 
-5. Now for the magic. Between the Inputs and Outputs, click the **+** button to add a step. With IntegrationHub installed, we have the **REST** step available. Select this and you will have a bunch of options show up
-g<img src="media/rest step.png">
+5. Now for the magic. Between the Inputs and Outputs, click the **+** button to add a step. Click on **REST Step** (Note: you must have IntegrationHub installed for this to be available)
+<kbd>
+<img src="media/rest step.png">
 </kbd>
 
 6. Next to **Connection**, leave the default of *Use Connection Alias*, then select your Connection Alias in the dropdown menu next to **Connection and Credential Alias**
@@ -123,7 +124,7 @@ g<img src="media/rest step.png">
 
 8. For headers, use *Content-Type* under **Name**, and *application/json* under **Value**
 
-9. Under body, you will have to enter each part of the input you would like to send to xMatters (yeah, this part kind of sucks...). Here is a good example of an input body:
+9. Under body, you will have to enter each part of the input you would like to send to xMatters (this part isn't so much fun...). Here is a good example of an input body:
 <kbd>
 <img src="media/step body.png">
 </kbd>
