@@ -40,7 +40,7 @@ Now that you have an xMatters Communication Plan, we need to set up a Connection
 
 2. In the *Filter navigator*, search for "alias", and select **Connection & Credential aliases**
 <kbd>
-<img src="media/alias filter.png">
+<img src="media/alias filter.png" width="300">
 </kbd>
 
 3. In the top left next to where you see **Connection & Credential aliases**, click **New**
@@ -95,7 +95,7 @@ Now you have a working Connection Alias that we can use to easiliy communicate t
 #### Setting up an Action
 1. In the *Filter navigator*, search for "flow", and under *Flow Designer*, click **Designer**
 <kbd>
-<img src="media/flow filter.png">
+<img src="media/flow filter.png" width="300">
 </kbd>
 
 2. You should see a list of flows. On the righthand side, click **New** > **New Action**
@@ -111,8 +111,7 @@ Now you have a working Connection Alias that we can use to easiliy communicate t
 </kbd>
 
 5. Now for the magic. Between the Inputs and Outputs, click the **+** button to add a step. With IntegrationHub installed, we have the **REST** step available. Select this and you will have a bunch of options show up
-<kbd>
-<img src="media/rest step.png">
+g<img src="media/rest step.png">
 </kbd>
 
 6. Next to **Connection**, leave the default of *Use Connection Alias*, then select your Connection Alias in the dropdown menu next to **Connection and Credential Alias**
@@ -133,7 +132,7 @@ Now you have a working Connection Alias that we can use to easiliy communicate t
 #### Setting up a Flow
 1. Now that you have an Action created, it is time to define a Flow. Next to the tab of your newly created Action, click the **+** button, and select **New Flow**
 <kbd>
-<img src="media/new flow.png">
+<img src="media/new flow.png" width="500">
 </kbd>
 
 2. Give your Flow a Name and a Description, then click **Submit**
@@ -169,7 +168,7 @@ There you have it! Once you have made all the changes you want to the body and t
 
 3. In the *Filter navigator*, search for "update sets", and under "System update sets", click "Update Sets to Commit"
 <kbd>
-<img src="media/filter update.png">
+<img src="media/filter update.png" width="300">
 </kbd>
 
 4. Under *Related Links*, click **Import Update Sets from XML**
@@ -182,13 +181,15 @@ There you have it! Once you have made all the changes you want to the body and t
 <kbd>
 <img src="media/update sets.png">
 </kbd>
-
+<kbd>
+<img src="media/preview update.png">
+</kbd>
 
 7. After the preview loads, click **Commit Update Set** to add the update set to your ServiceNow instance
 
 8. Now you should have an example Connection, Credential, Action, and Flow. First, using the *Filter navigator*, search for "alias" and click **Connection and Credential alias**
 <kbd>
-<img src="media/alias filter.png">
+<img src="media/alias filter.png" width="300">
 </kbd>
 
 9. Click on **Example Credential**, then click on **xMatters Example** under the credentials list
@@ -212,7 +213,7 @@ There you have it! Once you have made all the changes you want to the body and t
 
 13. Search for "flow" in the *Filter navigator*, and under *Flow Designer*, click **Designer**
 <kbd>
-<img src="media/flow filter.png">
+<img src="media/flow filter.png" width="300">
 </kbd>
 
 14. Search for "Example" and click on **Example Flow**, then click **Edit Properties**, and rename the Flow
