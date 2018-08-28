@@ -6,14 +6,14 @@ IntegrationHub is a feature in ServiceNow that makes integrating to third-party 
 </kbd>
 
 # Pre-Requisites
-* ServiceNow instance, with IntegrationHub purchased and installed - if you don't have IntegrationHub, see details on how to get it [here]()
+* ServiceNow instance, with IntegrationHub purchased and installed - if you don't have IntegrationHub, see details on how to get it [here](https://docs.servicenow.com/bundle/kingston-servicenow-platform/page/administer/integrationhub/tasks/request-integrationhub.html)
 * Existing communications plan - Use this packaged integration from the integrations page, or build your own
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
 * [ExampleCommPlan.zip](ExampleCommPlan.zip) - This is an example comm plan to help get started. 
 * [EmailMessageTemplate.html](EmailMessageTemplate.html) - This is an example HTML template for emails and push messages. 
-* [Payload](PayloadBody) - An example payload body to use in ServiceNow
+* [Payload](PayloadBody.png) - An example payload body to use in ServiceNow
 
 # How it works
 Add some info here detailing the overall architecture and how the integration works. The more information you can add, the more helpful this sections becomes. For example: An action happens in Application XYZ which triggers the thingamajig to fire a REST API call to the xMatters inbound integration on the imported communication plan. The integration script then parses out the payload and builds an event and passes that to xMatters. 
@@ -104,9 +104,6 @@ Now you have a working Connection Alias that we can use to easiliy communicate t
 </kbd>
 
 3. Give the Action a Name and Description, then **Submit**
-<kbd>
-<img src="media/create action.png">
-</kbd>
 
 4. In the Inputs, click **Create Input**, and give the input variable a name, then select the type and the table from which the input will be grabbed (for example, an input of type *Reference* from the table *Incident [incident]*)
 <kbd>
