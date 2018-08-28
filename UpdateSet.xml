@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-08-24 19:07:39">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<application_name>xMatters</application_name>
+<application_scope>x_xma_xmatters</application_scope>
+<application_version>5.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Package of IntegrationHub materials, including an example Connection alias, Action and Flow</description>
+<inserted/>
+<name>IntegrationHub Demo</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d46c6d22dbcc230070d09875db96198d</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>d98dd636dbc4630070d09875db96194b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_alias_8c9ced22dbcc230070d09875db9619e4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><connection_type>http_connection</connection_type><id>x_xma_xmatters.Example_Credential</id><multiple_connections>false</multiple_connections><name>Example_Credential</name><sys_class_name>sys_alias</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-23 20:55:25</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>8c9ced22dbcc230070d09875db9619e4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_xma_xmatters.Example_Credential</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_alias_8c9ced22dbcc230070d09875db9619e4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-23 20:55:25</sys_updated_on><type>credential</type></sys_alias></record_update>]]></payload>
+<payload_hash>1198490757</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>118dd636dbc4630070d09875db96194c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16568920a250000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>x_xma_xmatters.Example_Credential</target_name>
+<type>Connection &amp; Credential Aliases</type>
+<update_domain>global</update_domain>
+<update_guid>d29ced2252cc2300276f5e01d094cb4c</update_guid>
+<update_guid_history>d29ced2252cc2300276f5e01d094cb4c:1198490757</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_input_f6e682fadb84630070d09875db9619ad</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_hub_action_input"&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;ah_incident&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;incident&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Example Action"&gt;eae682fadb84630070d09875db961983&lt;/model&gt;&lt;model_id&gt;eae682fadb84630070d09875db961983&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_eae682fadb84630070d09875db961983&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="Incident" name="incident"&gt;incident&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-24 17:28:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;f6e682fadb84630070d09875db9619ad&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;var__m_sys_hub_action_input_eae682fadb84630070d09875db961983&lt;/sys_name&gt;&lt;sys_package display_value="xMatters" source="x_xma_xmatters"&gt;5950d7444f2231000e9fa88ca310c78c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="xMatters"&gt;5950d7444f2231000e9fa88ca310c78c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_input_f6e682fadb84630070d09875db9619ad&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-24 17:28:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-479591691</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>118dd636dbc4630070d09875db96194e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cfb53f80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name/>
+<type>Action Inputs</type>
+<update_domain>global</update_domain>
+<update_guid>72e682fad18463002b4c49f42fe8e0c5</update_guid>
+<update_guid_history>72e682fad18463002b4c49f42fe8e0c5:-479591691,b2e682fa7184630062b7dfc33d09aac2:48185700,f2e682fa56846300ffabe2fe7b5d93bf:-479591691</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_var__m_sys_hub_action_input_eae682fadb84630070d09875db961983_ah_incident_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="ah_incident" label="incident" language="en" table="var__m_sys_hub_action_input_eae682fadb84630070d09875db961983"><sys_documentation action="INSERT_OR_UPDATE"><element>ah_incident</element><help/><hint/><label>incident</label><language>en</language><name>var__m_sys_hub_action_input_eae682fadb84630070d09875db961983</name><plural>incident</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 17:28:54</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>3ae682fadb84630070d09875db9619b0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_documentation_var__m_sys_hub_action_input_eae682fadb84630070d09875db961983_ah_incident_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 17:28:54</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1440478182</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>158dd636dbc4630070d09875db96194d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cfb54180000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table>var__m_sys_hub_action_input_eae682fadb84630070d09875db961983</table>
+<target_name>.incident</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b6e682fa66846300b3300f69e75075c6</update_guid>
+<update_guid_history>b6e682fa66846300b3300f69e75075c6:1440478182,76e682fa10846300888311049db9a7c3:1440478182</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_step_instance_bee682fadb84630070d09875db9619c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance"><sys_hub_step_instance action="INSERT_OR_UPDATE"><action display_value="Example Action">eae682fadb84630070d09875db961983</action><cid>75e281c0-7649-421a-b361-448ee2336b61</cid><extended_inputs/><extended_outputs/><icon/><inputs/><label>REST step</label><order>1</order><outputs/><step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type><sys_class_name>sys_hub_step_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 17:28:55</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>bee682fadb84630070d09875db9619c7</sys_id><sys_mod_count>1</sys_mod_count><sys_name>REST step</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_step_instance_bee682fadb84630070d09875db9619c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 17:28:55</sys_updated_on></sys_hub_step_instance></record_update>]]></payload>
+<payload_hash>-956179002</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>158dda36dbc4630070d09875db9619af</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cfb54f30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>REST step</target_name>
+<type>Step Instance</type>
+<update_domain>global</update_domain>
+<update_guid>8be682fadd846300f38149b43423a2d0</update_guid>
+<update_guid_history>8be682fadd846300f38149b43423a2d0:-956179002,7ae682fa22846300fc9c11f88bba1ec8:-956179002</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_alias_bccc6162dbcc230070d09875db961918</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><connection_type>http_connection</connection_type><id>x_xma_xmatters.Example_Connection</id><multiple_connections>false</multiple_connections><name>Example_Connection</name><sys_class_name>sys_alias</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-23 20:56:15</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>bccc6162dbcc230070d09875db961918</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_xma_xmatters.Example_Connection</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_alias_bccc6162dbcc230070d09875db961918</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-23 20:56:15</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+<payload_hash>2102842327</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>198dd636dbc4630070d09875db96194c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656892ca730000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>x_xma_xmatters.Example_Connection</target_name>
+<type>Connection &amp; Credential Aliases</type>
+<update_domain>global</update_domain>
+<update_guid>92cca162ddcc2300c678dea21dcb6b97</update_guid>
+<update_guid_history>92cca162ddcc2300c678dea21dcb6b97:2102842327</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_step_instance_5afef9f6db84630070d09875db961941</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance"><sys_hub_step_instance action="INSERT_OR_UPDATE"><action display_value="Example Action">d2fef9f6db84630070d09875db961932</action><cid>75e281c0-7649-421a-b361-448ee2336b61</cid><extended_inputs/><extended_outputs/><icon/><inputs/><label>REST step</label><order>1</order><outputs/><step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type><sys_class_name>sys_hub_step_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 16:54:12</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5afef9f6db84630070d09875db961941</sys_id><sys_mod_count>1</sys_mod_count><sys_name>REST step</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_step_instance_5afef9f6db84630070d09875db961941</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 16:54:12</sys_updated_on></sys_hub_step_instance></record_update>]]></payload>
+<payload_hash>-1886468264</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>198dd636dbc4630070d09875db96194f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cdb8c3c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>REST step</target_name>
+<type>Step Instance</type>
+<update_domain>global</update_domain>
+<update_guid>5efef9f607846300af790d4dab4e5e49</update_guid>
+<update_guid_history>5efef9f607846300af790d4dab4e5e49:-1886468264,d2fef9f6e5846300b45fb973c2cbb642:-1886468264</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_type_snapshot_6ebc3db6db84630070d09875db96193a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot"><sys_hub_action_type_snapshot action="INSERT_OR_UPDATE"><access>public</access><annotation/><category/><description>Example Integration to xMatters</description><label_cache>[{"name":"{{action.ah_incident}}","label":"action➛incident","type":"action","ref":"incident"},{"name":"{{action.ah_incident.assignment_group}}","label":"action➛incident➛Assignment group","type":"action","ref":"sys_user_group"},{"name":"{{action.ah_incident.assigned_to}}","label":"action➛incident➛Assigned to","type":"action","ref":"sys_user"},{"name":"{{action.ah_incident.category}}","label":"action➛incident➛Category","type":"action","ref":""},{"name":"{{action.ah_incident.sys_id}}","label":"action➛incident➛Sys ID","type":"action","ref":""},{"name":"{{action.ah_incident.priority}}","label":"action➛incident➛Priority","type":"action","ref":""},{"name":"{{action.ah_incident.number}}","label":"action➛incident➛Number","type":"action","ref":""},{"name":"{{action.ah_incident.severity}}","label":"action➛incident➛Severity","type":"action","ref":""},{"name":"{{action.ah_incident.short_description}}","label":"action➛incident➛Short description","type":"action","ref":""}]</label_cache><name>Example Action</name><outputs/><parent_action display_value="Example Action">8597f136db84630070d09875db9619b8</parent_action><sys_class_name>sys_hub_action_type_snapshot</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 16:44:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>6ebc3db6db84630070d09875db96193a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Example Action</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_action_type_snapshot_6ebc3db6db84630070d09875db96193a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 16:44:22</sys_updated_on><system_level>false</system_level></sys_hub_action_type_snapshot></record_update>]]></payload>
+<payload_hash>-577980967</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>1d8dd636dbc4630070d09875db96194e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cd28d570000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>Example Action</target_name>
+<type>Action Type Snapshot</type>
+<update_domain>global</update_domain>
+<update_guid>eabc3db6f9846300d356edcca910a03b</update_guid>
+<update_guid_history>eabc3db6f9846300d356edcca910a03b:-577980967</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_var__m_sys_hub_action_input_d2fef9f6db84630070d09875db961932_ah_incident_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="ah_incident" label="incident" language="en" table="var__m_sys_hub_action_input_d2fef9f6db84630070d09875db961932"><sys_documentation action="INSERT_OR_UPDATE"><element>ah_incident</element><help/><hint/><label>incident</label><language>en</language><name>var__m_sys_hub_action_input_d2fef9f6db84630070d09875db961932</name><plural>incident</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 16:54:11</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>defef9f6db84630070d09875db961936</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_documentation_var__m_sys_hub_action_input_d2fef9f6db84630070d09875db961932_ah_incident_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 16:54:11</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1231772454</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>518dd636dbc4630070d09875db96194d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cdb8b740000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table>var__m_sys_hub_action_input_d2fef9f6db84630070d09875db961932</table>
+<target_name>.incident</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>52fef9f626846300b8c52596ad2a6540</update_guid>
+<update_guid_history>52fef9f626846300b8c52596ad2a6540:1231772454,12fef9f661846300ae4f1e66eb21353d:1231772454</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_flow_fe4982fadb84630070d09875db96196c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><active>false</active><description>Example flow for xMatters integration</description><label_cache>[{"name":"Created or Updated_1.current","label":"Trigger➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference"}]</label_cache><latest_snapshot/><name>Example Flow</name><remote_trigger_id/><show_draft_actions>false</show_draft_actions><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 17:39:17</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>fe4982fadb84630070d09875db96196c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Example Flow</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_flow_fe4982fadb84630070d09875db96196c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 19:04:22</sys_updated_on></sys_hub_flow></record_update>]]></payload>
+<payload_hash>1764970151</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>558dd636dbc4630070d09875db96194f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656d52b8c30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>Example Flow</target_name>
+<type>Flow</type>
+<update_domain>global</update_domain>
+<update_guid>91ccdab291c4630094fb25741775da74</update_guid>
+<update_guid_history>91ccdab291c4630094fb25741775da74:1764970151,724982fa43846300278104eed803b46e:-993403911</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_type_definition_8597f136db84630070d09875db9619b8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><active>true</active><annotation/><category/><description>Example Integration to xMatters</description><label_cache>[{"name":"{{action.ah_incident}}","label":"action➛incident","type":"action","ref":"incident"},{"name":"{{action.ah_incident.assignment_group}}","label":"action➛incident➛Assignment group","type":"action","ref":"sys_user_group"},{"name":"{{action.ah_incident.assigned_to}}","label":"action➛incident➛Assigned to","type":"action","ref":"sys_user"},{"name":"{{action.ah_incident.category}}","label":"action➛incident➛Category","type":"action","ref":""},{"name":"{{action.ah_incident.sys_id}}","label":"action➛incident➛Sys ID","type":"action","ref":""},{"name":"{{action.ah_incident.priority}}","label":"action➛incident➛Priority","type":"action","ref":""},{"name":"{{action.ah_incident.number}}","label":"action➛incident➛Number","type":"action","ref":""},{"name":"{{action.ah_incident.severity}}","label":"action➛incident➛Severity","type":"action","ref":""},{"name":"{{action.ah_incident.short_description}}","label":"action➛incident➛Short description","type":"action","ref":""}]</label_cache><latest_snapshot display_value="Example Action">eae682fadb84630070d09875db961983</latest_snapshot><name>Example Action</name><outputs/><state>published</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 16:21:53</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>8597f136db84630070d09875db9619b8</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Example Action</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_action_type_definition_8597f136db84630070d09875db9619b8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 17:28:55</sys_updated_on><system_level>false</system_level></sys_hub_action_type_definition></record_update>]]></payload>
+<payload_hash>2134128687</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>598dd636dbc4630070d09875db96194e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cfb55510000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>Example Action</target_name>
+<type>Action Type</type>
+<update_domain>global</update_domain>
+<update_guid>0be682fac58463002ca6ad9fdb4eb7d5</update_guid>
+<update_guid_history>0be682fac58463002ca6ad9fdb4eb7d5:2134128687,96e682fa5e8463000218ac48d4339e5e:-1696633328,eafef9f6058463000360d775617fd04e:796831709,f5fe3db6368463008693be2150ed4269:-1893548548,2abc3db603846300f3cdce9f8e8b7857:-1333777975,21bc3db6608463008986af69eaa6100f:819711906,0997f136d08463006525d2e0d51effb9:-668012626</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_input_defef9f6db84630070d09875db961933</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_hub_action_input"&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;ah_incident&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;incident&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Example Action"&gt;d2fef9f6db84630070d09875db961932&lt;/model&gt;&lt;model_id&gt;d2fef9f6db84630070d09875db961932&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_d2fef9f6db84630070d09875db961932&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="Incident" name="incident"&gt;incident&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-24 16:54:11&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;defef9f6db84630070d09875db961933&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;var__m_sys_hub_action_input_d2fef9f6db84630070d09875db961932&lt;/sys_name&gt;&lt;sys_package display_value="xMatters" source="x_xma_xmatters"&gt;5950d7444f2231000e9fa88ca310c78c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="xMatters"&gt;5950d7444f2231000e9fa88ca310c78c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_input_defef9f6db84630070d09875db961933&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-24 16:54:11&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1263211219</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>5d8dd636dbc4630070d09875db96194d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cdb8b560000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name/>
+<type>Action Inputs</type>
+<update_domain>global</update_domain>
+<update_guid>1efef9f6fb846300e36146448ec50b3e</update_guid>
+<update_guid_history>1efef9f6fb846300e36146448ec50b3e:-1263211219,5efef9f6cf846300a98a10276f0e073b:578470382,defef9f6c1846300e522d99d51cfd038:-1263211219</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_type_snapshot_eae682fadb84630070d09875db961983</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot"><sys_hub_action_type_snapshot action="INSERT_OR_UPDATE"><access>public</access><annotation/><category/><description>Example Integration to xMatters</description><label_cache>[{"name":"{{action.ah_incident}}","label":"action➛incident","type":"action","ref":"incident"},{"name":"{{action.ah_incident.assignment_group}}","label":"action➛incident➛Assignment group","type":"action","ref":"sys_user_group"},{"name":"{{action.ah_incident.assigned_to}}","label":"action➛incident➛Assigned to","type":"action","ref":"sys_user"},{"name":"{{action.ah_incident.category}}","label":"action➛incident➛Category","type":"action","ref":""},{"name":"{{action.ah_incident.sys_id}}","label":"action➛incident➛Sys ID","type":"action","ref":""},{"name":"{{action.ah_incident.priority}}","label":"action➛incident➛Priority","type":"action","ref":""},{"name":"{{action.ah_incident.number}}","label":"action➛incident➛Number","type":"action","ref":""},{"name":"{{action.ah_incident.severity}}","label":"action➛incident➛Severity","type":"action","ref":""},{"name":"{{action.ah_incident.short_description}}","label":"action➛incident➛Short description","type":"action","ref":""}]</label_cache><name>Example Action</name><outputs/><parent_action display_value="Example Action">8597f136db84630070d09875db9619b8</parent_action><sys_class_name>sys_hub_action_type_snapshot</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 17:28:53</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>eae682fadb84630070d09875db961983</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Example Action</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_action_type_snapshot_eae682fadb84630070d09875db961983</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 17:28:53</sys_updated_on><system_level>false</system_level></sys_hub_action_type_snapshot></record_update>]]></payload>
+<payload_hash>-577980967</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>918dd636dbc4630070d09875db96194f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cfb4edf0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>Example Action</target_name>
+<type>Action Type Snapshot</type>
+<update_domain>global</update_domain>
+<update_guid>e6e682faf18463009ae57a2dcb0dd984</update_guid>
+<update_guid_history>e6e682faf18463009ae57a2dcb0dd984:-577980967</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_type_definition_19f8f431db3b93c070d09875db9619ae</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><active>true</active><annotation/><category/><description/><label_cache>[{"name":"{{action.ah_incident}}","label":"action➛incident","type":"action","ref":"incident"},{"name":"{{action.ah_incident.assignment_group}}","label":"action➛incident➛Assignment group","type":"action","ref":"sys_user_group"},{"name":"{{action.ah_incident.priority}}","label":"action➛incident➛Priority","type":"action","ref":""},{"name":"{{action.ah_incident.short_description}}","label":"action➛incident➛Short description","type":"action","ref":""},{"name":"{{action.ah_incident.sys_id}}","label":"action➛incident➛Sys ID","type":"action","ref":""},{"name":"{{action.ah_incident.number}}","label":"action➛incident➛Number","type":"action","ref":""},{"name":"{{action.ah_incident.assigned_to}}","label":"action➛incident➛Assigned to","type":"action","ref":"sys_user"},{"name":"{{action.ah_incident.category}}","label":"action➛incident➛Category","type":"action","ref":""},{"name":"{{action.ah_incident.severity}}","label":"action➛incident➛Severity","type":"action","ref":""},{"name":"{{action.ah_incident.active}}","label":"action➛incident➛Active","type":"action","ref":""},{"name":"{{action.ah_incident.contact_type}}","label":"action➛incident➛Contact type","type":"action","ref":""},{"name":"{{action.ah_incident.sys_created_on}}","label":"action➛incident➛Created","type":"action","ref":""},{"name":"{{action.ah_incident.sys_created_by}}","label":"action➛incident➛Created by","type":"action","ref":""},{"name":"{{action.ah_incident.urgency}}","label":"action➛incident➛Urgency","type":"action","ref":""}]</label_cache><latest_snapshot display_value="xMatters">96fe91eadb8c230070d09875db96193a</latest_snapshot><name>xMatters</name><outputs/><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-08 22:58:40</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>19f8f431db3b93c070d09875db9619ae</sys_id><sys_mod_count>65</sys_mod_count><sys_name>xMatters</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_action_type_definition_19f8f431db3b93c070d09875db9619ae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-23 21:27:27</sys_updated_on><system_level>false</system_level></sys_hub_action_type_definition></record_update>]]></payload>
+<payload_hash>-1996546489</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>958dd636dbc4630070d09875db96194e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16568af5cd60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>xMatters</target_name>
+<type>Action Type</type>
+<update_domain>global</update_domain>
+<update_guid>a3e3b1268bcc2300e29b4e6ec55cbdea</update_guid>
+<update_guid_history>a3e3b1268bcc2300e29b4e6ec55cbdea:-1996546489,6afe91ea658c230010020e8f9db88a80:-1652378796,31fed52a8d8c2300f6404ceaaf7b0b70:-1447302374,ab8798dea94423008268bc95ee1c806e:1184292519,fa8794de03442300367cc961e913b47e:1096149591,cc0794decf44230065cb98b34bf2960b:1987376996,3bf614def044230098798a22233e8741:1813565737,2ac614deab4423007e460eea7ed3442d:618931510,46c6d0debf4423004bcb6b96ba32d6d6:-789447269,ef9690de8344230065814d0727cf1266:-410138456,cf96509e97442300158633d9ec2f829b:1114361475,f736dc9e00442300ba7ca698d8f1a005:1952769424,9215909e904423003a4357e85867ed13:-643294019,6d44509e824423004c1fcef7ebb868da:1543210698,5144509e11442300717152df542c6a0e:-280924858,0b34509edf4423004b8987d56dd9bf95:1811376851,9d68377599086300239a83d3ceccc167:-1758475533,a444f375e70863001ae553ca3f0eabfb:1555064860,ab3433755b0863002a5462b074474cf4:-1251436204,a1370614078c23000e195a91d36cf298:-1080705193,37278214638c23002991ff822aaa56d4:-1251769838,1a078214a88c23004391699b54aa22ce:1982478751,11a68ed0498c2300b72ba1c1300cfcf2:1272073480,a1668ed06d8c2300f981dc8e3c957c37:1370397077,e0664ed0188c2300b1e886f0e5705ae5:-1706016536,1b75c6d0358c2300ccadefccafd5893e:-2041602699,b17586d0528c2300dff4c96751224bf1:-1633561032,cd4546d0ea8c230001f8e5a76a566b6f:842402501,5b3506d0158c23003e86b137590fb8dc:1426469637,b9c442d0b38c2300da769189fb95b3e4:844445970,cdc44290cb8c230061cd7fc124649f34:-665068372,e8524290048c2300d4076504830f7b09:-843589693,84520e503c8c2300a0e0e4c46b30fcc8:-767198462,5e420290038c23002f1ef6f1ff56de4f:-49635609,0622ce50058c23000e4a8cd68547985e:681370612,f522ca507e8c2300d29a2251c1999361:-1318997764,1c21c650de8c2300d6f8303a782a8363:-1641268700,32808250128c2300a9acf2797c705a4f:2110143300,5b4002507a8c2300802901dddb285d4d:368430555,f240ce10be8c2300acde2f55c01664fa:-636723909,b0eff910bb8c2300d5b0460de5001c0d:2126076253,3e9ff910ed8c2300e6b19f126aa19703:222750752,8e9fb1109e8c2300277549312bd71e6f:-1249212518,982e7110588c2300132f1d45eae83d29:-1140922555,6f1ef1dc3f4c2300f66d53a8f6acd3b8:267573173,7dd5791cf54c2300c8c4fc043e15a267:-1476393534,ffe22914504c2300f3147c591769a122:1535964313,032338403e4423007c6734e5b5311b7d:767103142,7223f440c74423008c7a4e0b67d437c7:555884628,78233840ee4423008187f8462cd87720:-1995708703,6b13f44002442300a413ce1aa0979fb4:920959083,8af2b440c944230041b7eacce5bdd05d:1292278648,52c2bc00554423006dca4aad0d39f265:-443577180,e8a1b80071442300979b903df80a02ce:2137085078,7b91b800484423007bf76143200aca5a:-358201927,26613800f4442300b3c49d1af32d369d:-8072762,5f41b400954423004ad8ef7e8d433d54:-1395798243,324ca08ca30423001de3bc1f03f2ff12:-1406509115,4f1cec4c7a042300eeef0d94008e3d8e:-673442725,367e5008ca0423006e4e2737fb0007b7:-1511638342,e57e50087f0423006566bf850037f940:-1612344817,88a5dcc04c04230013b0e7bdde0fa5ac:891439050,4f955cc0b8042300fa6b089bdc72817c:115739370,b144803fc77f57c0df23508fb39af71b:-1089694089,f25fdbeb113f57c097d23109a60415f8:-540896059,95f8f4311c3b93c047429005af8c25b0:259222775</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_input_a1bc3db6db84630070d09875db961910</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_hub_action_input"&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;ah_incident&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;incident&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Example Action"&gt;8597f136db84630070d09875db9619b8&lt;/model&gt;&lt;model_id&gt;8597f136db84630070d09875db9619b8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_8597f136db84630070d09875db9619b8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="Incident" name="incident"&gt;incident&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-24 16:44:19&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;a1bc3db6db84630070d09875db961910&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;var__m_sys_hub_action_input_8597f136db84630070d09875db9619b8&lt;/sys_name&gt;&lt;sys_package display_value="xMatters" source="x_xma_xmatters"&gt;5950d7444f2231000e9fa88ca310c78c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="xMatters"&gt;5950d7444f2231000e9fa88ca310c78c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_input_a1bc3db6db84630070d09875db961910&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-24 16:44:19&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-107037762</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>998dd636dbc4630070d09875db96194d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cd281c90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name/>
+<type>Action Inputs</type>
+<update_domain>global</update_domain>
+<update_guid>fdbc3db6cd846300285013e69424d01b</update_guid>
+<update_guid_history>fdbc3db6cd846300285013e69424d01b:-107037762,7dbc3db69e8463008d97f4309ed0f118:1908922895,7dbc3db6ef84630091a5362ec1af0a15:-107037762</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_trigger_instance_11ccdab2dbc4630070d09875db961975</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_trigger_instance"><sys_hub_trigger_instance action="INSERT_OR_UPDATE"><display_text/><flow display_value="Example Flow">fe4982fadb84630070d09875db96196c</flow><name>Created or Updated</name><remote_sys_id/><sys_class_name>sys_hub_trigger_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 19:04:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>11ccdab2dbc4630070d09875db961975</sys_id><sys_mod_count>1</sys_mod_count><sys_name>record_create_or_update</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_trigger_instance_11ccdab2dbc4630070d09875db961975</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 19:04:22</sys_updated_on><trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition><trigger_inputs/><trigger_outputs/><trigger_type>record_create_or_update</trigger_type></sys_hub_trigger_instance></record_update>]]></payload>
+<payload_hash>8317742</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>998dda36dbc4630070d09875db9619af</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656d52ba470000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>record_create_or_update</target_name>
+<type>Process Flow Trigger Stage</type>
+<update_domain>global</update_domain>
+<update_guid>19cc163613c46300000cdd62712384ae</update_guid>
+<update_guid_history>19cc163613c46300000cdd62712384ae:8317742,d9cc163655c4630089deac657df6edac:8317742</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_var__m_sys_hub_action_input_8597f136db84630070d09875db9619b8_ah_incident_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="ah_incident" label="incident" language="en" table="var__m_sys_hub_action_input_8597f136db84630070d09875db9619b8"><sys_documentation action="INSERT_OR_UPDATE"><element>ah_incident</element><help/><hint/><label>incident</label><language>en</language><name>var__m_sys_hub_action_input_8597f136db84630070d09875db9619b8</name><plural>incident</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 16:44:19</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e5bc3db6db84630070d09875db961913</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_documentation_var__m_sys_hub_action_input_8597f136db84630070d09875db9619b8_ah_incident_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 16:44:19</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-10044122</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>9d8dd636dbc4630070d09875db96194c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cd281ec0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table>var__m_sys_hub_action_input_8597f136db84630070d09875db9619b8</table>
+<target_name>.incident</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>75bc3db6898463005f657ba19065961d</update_guid>
+<update_guid_history>75bc3db6898463005f657ba19065961d:-10044122,b1bc3db657846300096d2464b19f411a:-10044122</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_instance_51cc1636dbc4630070d09875db9619b0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance"><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Example Action">eae682fadb84630070d09875db961983</action_type><comment/><compiled_snapshot/><display_text/><flow display_value="Example Flow">fe4982fadb84630070d09875db96196c</flow><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 19:04:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>51cc1636dbc4630070d09875db9619b0</sys_id><sys_mod_count>3</sys_mod_count><sys_name/><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_action_instance_51cc1636dbc4630070d09875db9619b0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 19:04:23</sys_updated_on><ui_id>0c03dad3-e833-40ed-83c2-f33dd9d71a03</ui_id></sys_hub_action_instance></record_update>]]></payload>
+<payload_hash>-663709524</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>d18dd636dbc4630070d09875db96194e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656d52bb5c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name/>
+<type>Action Instance</type>
+<update_domain>global</update_domain>
+<update_guid>ddcc1636aac46300d02fea917454bab7</update_guid>
+<update_guid_history>ddcc1636aac46300d02fea917454bab7:-663709524,59cc163637c4630091d3e466f5b561b1:201564554</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_input_6ebc3db6db84630070d09875db96193c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_hub_action_input"&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;ah_incident&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;incident&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Example Action"&gt;6ebc3db6db84630070d09875db96193a&lt;/model&gt;&lt;model_id&gt;6ebc3db6db84630070d09875db96193a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_6ebc3db6db84630070d09875db96193a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="Incident" name="incident"&gt;incident&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-24 16:44:22&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;6ebc3db6db84630070d09875db96193c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;var__m_sys_hub_action_input_6ebc3db6db84630070d09875db96193a&lt;/sys_name&gt;&lt;sys_package display_value="xMatters" source="x_xma_xmatters"&gt;5950d7444f2231000e9fa88ca310c78c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="xMatters"&gt;5950d7444f2231000e9fa88ca310c78c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_input_6ebc3db6db84630070d09875db96193c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-24 16:44:22&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;/record_update&gt;</payload>
+<payload_hash>193368029</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>d58dd636dbc4630070d09875db96194d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cd28e640000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name/>
+<type>Action Inputs</type>
+<update_domain>global</update_domain>
+<update_guid>aabc3db6ab846300b0e43bdc05d87047</update_guid>
+<update_guid_history>aabc3db6ab846300b0e43bdc05d87047:193368029,eabc3db6808463003e1c5840740e3244:1668322994,6ebc3db60984630033d084cbfef75141:193368029</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_step_instance_e6bc3db6db84630070d09875db96194a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance"><sys_hub_step_instance action="INSERT_OR_UPDATE"><action display_value="Example Action">6ebc3db6db84630070d09875db96193a</action><cid>75e281c0-7649-421a-b361-448ee2336b61</cid><extended_inputs/><extended_outputs/><icon/><inputs/><label>REST step</label><order>1</order><outputs/><step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type><sys_class_name>sys_hub_step_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 16:44:23</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e6bc3db6db84630070d09875db96194a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>REST step</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_step_instance_e6bc3db6db84630070d09875db96194a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 16:44:23</sys_updated_on></sys_hub_step_instance></record_update>]]></payload>
+<payload_hash>-677640724</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>d58dda36dbc4630070d09875db9619af</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cd28f4c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>REST step</target_name>
+<type>Step Instance</type>
+<update_domain>global</update_domain>
+<update_guid>eabc3db645846300ec84866a3461a352</update_guid>
+<update_guid_history>eabc3db645846300ec84866a3461a352:-677640724,62bc3db6b4846300beeaf79799b9434b:-677640724</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_var__m_sys_hub_action_input_6ebc3db6db84630070d09875db96193a_ah_incident_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="ah_incident" label="incident" language="en" table="var__m_sys_hub_action_input_6ebc3db6db84630070d09875db96193a"><sys_documentation action="INSERT_OR_UPDATE"><element>ah_incident</element><help/><hint/><label>incident</label><language>en</language><name>var__m_sys_hub_action_input_6ebc3db6db84630070d09875db96193a</name><plural>incident</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 16:44:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>6ebc3db6db84630070d09875db96193f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_documentation_var__m_sys_hub_action_input_6ebc3db6db84630070d09875db96193a_ah_incident_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 16:44:22</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1122898010</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>d98dd636dbc4630070d09875db96194c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cd28e860000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table>var__m_sys_hub_action_input_6ebc3db6db84630070d09875db96193a</table>
+<target_name>.incident</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>eebc3db63a8463002023cec5c5a8f148</update_guid>
+<update_guid_history>eebc3db63a8463002023cec5c5a8f148:-1122898010,aebc3db69584630018e57fd198b3e445:-1122898010</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_step_instance_7dbc3db6db84630070d09875db96191e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance"><sys_hub_step_instance action="INSERT_OR_UPDATE"><action display_value="Example Action">8597f136db84630070d09875db9619b8</action><cid>75e281c0-7649-421a-b361-448ee2336b61</cid><extended_inputs/><extended_outputs/><icon/><inputs/><label>REST step</label><order>1</order><outputs/><step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type><sys_class_name>sys_hub_step_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 16:44:19</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7dbc3db6db84630070d09875db96191e</sys_id><sys_mod_count>2</sys_mod_count><sys_name>REST step</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_step_instance_7dbc3db6db84630070d09875db96191e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 17:28:52</sys_updated_on></sys_hub_step_instance></record_update>]]></payload>
+<payload_hash>-618350552</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>d98dd636dbc4630070d09875db96194f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cfb4ad80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>REST step</target_name>
+<type>Step Instance</type>
+<update_domain>global</update_domain>
+<update_guid>12e682faa28463003e20c7d0eb4f3667</update_guid>
+<update_guid_history>12e682faa28463003e20c7d0eb4f3667:-618350552,b9bc3db6a38463000b2b29839ae1ad1f:-618350552</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</application>
+<category>customer</category>
+<comments/>
+<name>sys_hub_action_type_snapshot_d2fef9f6db84630070d09875db961932</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot"><sys_hub_action_type_snapshot action="INSERT_OR_UPDATE"><access>public</access><annotation/><category/><description>Example Integration to xMatters</description><label_cache>[{"name":"{{action.ah_incident}}","label":"action➛incident","type":"action","ref":"incident"},{"name":"{{action.ah_incident.assignment_group}}","label":"action➛incident➛Assignment group","type":"action","ref":"sys_user_group"},{"name":"{{action.ah_incident.assigned_to}}","label":"action➛incident➛Assigned to","type":"action","ref":"sys_user"},{"name":"{{action.ah_incident.category}}","label":"action➛incident➛Category","type":"action","ref":""},{"name":"{{action.ah_incident.sys_id}}","label":"action➛incident➛Sys ID","type":"action","ref":""},{"name":"{{action.ah_incident.priority}}","label":"action➛incident➛Priority","type":"action","ref":""},{"name":"{{action.ah_incident.number}}","label":"action➛incident➛Number","type":"action","ref":""},{"name":"{{action.ah_incident.severity}}","label":"action➛incident➛Severity","type":"action","ref":""},{"name":"{{action.ah_incident.short_description}}","label":"action➛incident➛Short description","type":"action","ref":""}]</label_cache><name>Example Action</name><outputs/><parent_action display_value="Example Action">8597f136db84630070d09875db9619b8</parent_action><sys_class_name>sys_hub_action_type_snapshot</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-24 16:54:11</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d2fef9f6db84630070d09875db961932</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Example Action</sys_name><sys_package display_value="xMatters" source="x_xma_xmatters">5950d7444f2231000e9fa88ca310c78c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="xMatters">5950d7444f2231000e9fa88ca310c78c</sys_scope><sys_update_name>sys_hub_action_type_snapshot_d2fef9f6db84630070d09875db961932</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-24 16:54:11</sys_updated_on><system_level>false</system_level></sys_hub_action_type_snapshot></record_update>]]></payload>
+<payload_hash>-577980967</payload_hash>
+<remote_update_set display_value="IntegrationHub Demo">d98dd636dbc4630070d09875db96194b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-08-24 19:07:39</sys_created_on>
+<sys_id>dd8dd636dbc4630070d09875db96194e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656cdb8a360000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-08-24 19:07:39</sys_updated_on>
+<table/>
+<target_name>Example Action</target_name>
+<type>Action Type Snapshot</type>
+<update_domain>global</update_domain>
+<update_guid>9efef9f605846300d6634e7700a2bf32</update_guid>
+<update_guid_history>9efef9f605846300d6634e7700a2bf32:-577980967</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

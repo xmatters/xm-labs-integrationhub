@@ -37,111 +37,215 @@ Add some info here detailing the overall architecture and how the integration wo
 #### Setting up a Credential and Connection Alias:
 Now that you have an xMatters Communication Plan, we need to set up a Connection alias in ServiceNow to connect quickly and easily to the Comm Plan
 1. Log in to your ServiceNow instance
+
 2. In the *Filter navigator*, search for "alias", and select **Connection & Credential aliases**
 <kbd>
 <img src="media/alias filter.png">
 </kbd>
+
 3. In the top left next to where you see **Connection & Credential aliases**, click **New**
 <kbd>
 <img src="media/new credential.png">
 </kbd>
+
 4. In the dropdown menu next to **Type**, select *Credential*, then give the Credential a Name, and hit **Submit**
 <kbd>
 <img src="media/create credential.png">
 </kbd>
+
 5. You will now see a list of Connections and Credentials; click (or search if you have many set up) the Credential you just created
+
 6. Next to **Credentials** (right below the Credential *Name* and *Type*), click **New**, and select the *Basic Auth Credentials* option on the following page
 <kbd>
 <img src="media/add credential.png">
 </kbd>
+
 7. Give the Credential a *Name*, and enter the *User* and *Password* for the xMatters account with access to the Communication Plan, then click **Submit** to finish
 <kbd>
 <img src="media/define credential.png">
 </kbd>
+
 8. Now that you have a Credential, click the back button to return to the list of Connections & Credentials, then hit **New**
 <kbd>
 <img src="media/new connection.png">
 </kbd>
+
 9. This time, in the dropdown menu next to **Type**, select *Connection and Credential*, and in the dropdown menu next to **Connection Type**, select *HTTP*, then give the Connection a Name, and click **Submit**
 <kbd>
 <img src="media/create connection.png">
 </kbd>
+
 10. You will again see a list of Connections and Credentials; click (or search for) the Connection you just created
 11. Next to **Connections** (right below the Connection *Name* and *Type*), click **New**
 <kbd>
 <img src="media/add connection.png">
 </kbd>
+
 12. Give the Connection a Name, then click the **Credential**, and select the Credential that you just created
 <kbd>
 <img src="media/create connection.png">
 </kbd>
+
 13. Paste the URL you copied from the xMatters Communication Plan into the **Connection URL** box, then Submit
 <kbd>
 <img src="media/define connection.png">
 </kbd>
+
 Now you have a working Connection Alias that we can use to easiliy communicate to xMatters! Now for setting up an Action
 #### Setting up an Action
 1. In the *Filter navigator*, search for "flow", and under *Flow Designer*, click **Designer**
 <kbd>
 <img src="media/flow filter.png">
 </kbd>
+
 2. You should see a list of flows. On the righthand side, click **New** > **New Action**
 <kbd>
 <img src="media/new action.png">
 </kbd>
+
 3. Give the Action a Name and Description, then **Submit**
 <kbd>
 <img src="media/create action.png">
 </kbd>
+
 4. In the Inputs, click **Create Input**, and give the input variable a name, then select the type and the table from which the input will be grabbed (for example, an input of type *Reference* from the table *Incident [incident]*)
 <kbd>
 <img src="media/create input.png">
 </kbd>
+
 5. Now for the magic. Between the Inputs and Outputs, click the **+** button to add a step. With IntegrationHub installed, we have the **REST** step available. Select this and you will have a bunch of options show up
 <kbd>
 <img src="media/rest step.png">
 </kbd>
+
 6. Next to **Connection**, leave the default of *Use Connection Alias*, then select your Connection Alias in the dropdown menu next to **Connection and Credential Alias**
 <kbd>
 <img src="media/rest step connection.png">
 </kbd>
+
 7. From the dropdown menu next to **HTTP Method**, select *POST* (the Base URL is grayed out because it is already defined in the Connection Alias). We will not need to fill anything in for **Resource Path** in this example because the full URL from the Communication Plan is in the Connection Alias. However, if you would like to set up multiple integrations using IntegrationHub, it may be a good idea to define the URL in the Connection Alias as being ```https://example.xmatters.com/api/integration/1/functions/``` (with example being replaced with your instance), and then you could create multiple inbound integrations and have different actions use different inbound integration URLs by using the same Connection alias, and only change the Resource Path to ```[API key]/triggers``` .
+
 8. For headers, use *Content-Type* under **Name**, and *application/json* under **Value**
+
 9. Under body, you will have to enter each part of the input you would like to send to xMatters (yeah, this part kind of sucks...). Here is a good example of an input body:
 <kbd>
 <img src="media/step body.png">
 </kbd>
+
 10. Once you are happy with your body, hit **Save** in the top right, and then **Publish** (if you don't publish, you will not be able to see your Action when you are creating your Flow!)
 #### Setting up a Flow
 1. Now that you have an Action created, it is time to define a Flow. Next to the tab of your newly created Action, click the **+** button, and select **New Flow**
 <kbd>
 <img src="media/new flow.png">
 </kbd>
+
 2. Give your Flow a Name and a Description, then click **Submit**
 <kbd>
 <img src="media/define flow.png">
 </kbd>
+
 3. Under *Triggers*, click **Click to add a Trigger**, and select the kind of Trigger you want (for example, use *Created or Updated* to fire the Flow whenever a table entry is created or updated, combined with whatever conditions you define).
 <kbd>
 <img src="media/add trigger.png">
 </kbd>
+
 4. Add any conditions you would like to add (for example, Assignment group => changes would fire the action or flow logic whenever an incident is created or updated where the assignment group changes), set **Run Triggers** to *Always*, then click **Done**
 <kbd>
 <img src="media/define trigger.png">
 </kbd>
+
 5. Now that you have a Trigger, you can add the Action using the Trigger as the input. Click **Click to add Action or Flow Logic**, select the Action you just created, then use the *Data Pill Picker* to select the Trigger input, and click **Done** to save it
 <kbd>
 <img src="media/add action.png">
 </kbd>
+
 <kbd>
 <img src="media/add action input.png">
 </kbd>
+
 There you have it! Once you have made all the changes you want to the body and the trigger, make sure to test your flow with the **Test** button, using any incident to test the integration, then hit **Save** and **Activate** to activate your integration!
-### Installing an Update Set
+
+### Option 2: Installing an Update Set
+1. Download the [update set](UpdateSet.xml)
+
+2. Log in to your ServiceNow instance
+
+3. In the *Filter navigator*, search for "update sets", and under "System update sets", click "Update Sets to Commit"
+<kbd>
+<img src="media/filter update.png">
+</kbd>
+
+4. Under *Related Links*, click **Import Update Sets from XML**
+<kbd>
+<img src="media/update sets.png">
+</kbd>
+
+5. Click the **Choose file** button, select the update set you downloaded and click **Open**. Next, hit the **Upload** button.
+6. Now you should see a list of retrieved update sets. Click on the update set *IntegrationHub Demo*, then click **Preview Update Set**
+<kbd>
+<img src="media/update sets.png">
+</kbd>
+
+
+7. After the preview loads, click **Commit Update Set** to add the update set to your ServiceNow instance
+
+8. Now you should have an example Connection, Credential, Action, and Flow. First, using the *Filter navigator*, search for "alias" and click **Connection and Credential alias**
+<kbd>
+<img src="media/alias filter.png">
+</kbd>
+
+9. Click on **Example Credential**, then click on **xMatters Example** under the credentials list
+<kbd>
+<img src="media/example credential.png">
+</kbd>
+<kbd>
+<img src="media/example user.png">
+</kbd>
+
+10. Change the *Username* and *Password* to the account that can access the Communication Plan in xMatters, and then click **Update**
+11. Click the back button, and open the **Example Connection**, then click on **Example Connection** under the *Connections* list
+<kbd>
+<img src="media/example connection.png">
+</kbd>
+
+12. Select the *Credential* you just changed, then replace the example *Connection URL* with the URL from your xMatters Communication Plan, and click **Update**
+<kbd>
+<img src="media/example connection builder.png">
+</kbd>
+
+13. Search for "flow" in the *Filter navigator*, and under *Flow Designer*, click **Designer**
+<kbd>
+<img src="media/flow filter.png">
+</kbd>
+
+14. Search for "Example" and click on **Example Flow**, then click **Edit Properties**, and rename the Flow
+<kbd>
+<img src="media/example flow.png">
+</kbd>
+
+15. Click on the trigger **[Incident] Created or Updated** and set the table to whatever table you would like to grab the input from. Now, set the trigger to what you would like it to be, then click **Done**
+<kbd>
+<img src="media/example trigger.png">
+</kbd>
+<kbd>
+<img src="media/change trigger.png">
+</kbd>
+
+16. Click the Home button in the top left, then click on **Actions**, and search "Example", selecting **Example Action**, and rename the Action using **Edit Properties**
+<kbd>
+<img src="media/example action.png">
+</kbd>
+
+17. Change the input to the same table as the one selected in the Flow, then click on the **REST Step**
+<kbd>
+<img src="media/change action.png">
+</kbd>
+
+18. Verify that the correct *Connection and Credential Alias* is selected, then edit the body to send the desired values over to xMatters (see Troubleshooting section for more help on this)
+There you have it! Make sure to hit **Publish** on the Action to commit the changes you make, then use the **Test** button in the Flow to troubleshoot body errors
 
 ## xMatters set up
-1. More help on importing a [communication plan](http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
-2. If you would like to create your own communication plan, it is recommended to use [this](
+More help on importing a [communication plan](http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
 
 
 # Testing
