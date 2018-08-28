@@ -179,7 +179,10 @@ There you have it! Once you have made all the changes you want to the body and t
 5. Click the **Choose file** button, select the update set you downloaded and click **Open**. Next, hit the **Upload** button.
 6. Now you should see a list of retrieved update sets. Click on the update set *IntegrationHub Demo*, then click **Preview Update Set**
 <kbd>
-<img src="media/update sets.png">
+<img src="media/choose update.png">
+</kbd>
+<kbd>
+<img src="media/select update.png">
 </kbd>
 <kbd>
 <img src="media/preview update.png">
