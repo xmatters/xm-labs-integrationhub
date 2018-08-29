@@ -205,12 +205,12 @@ There you have it! Once you have made all the changes you want to the body and t
 </kbd>
 
 10. Change the *Username* and *Password* to the account that can access the Communication Plan in xMatters, and then click **Update**
-11. Click the back button, and open the **Example Connection**, then click on **Example Connection** under the *Connections* list
+11. Click the back button, and open the **Example Connection**, then click **New** next to the *Connections* list
 <kbd>
 <img src="media/example connection.png">
 </kbd>
 
-12. Select the *Credential* you just changed, then replace the example *Connection URL* with the URL from your xMatters Communication Plan, and click **Update**
+12. Give the Connection a *Name*, select the *Credential* you just changed, then fill in the *Connection URL* with the URL from your xMatters Communication Plan, and click **Update**
 <kbd>
 <img src="media/example connection builder.png">
 </kbd>
