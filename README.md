@@ -247,7 +247,17 @@ There you have it! Once you have made all the changes you want to the body and t
 There you have it! Make sure to hit **Publish** on the Action to commit the changes you make, then use the **Test** button in the Flow to troubleshoot body errors
 
 ## xMatters set up
-More help on importing a [communication plan](http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
+### Change the endpoint
+1. Navigate to the **DEVELOPER** tab, and locate the ServiceNow IntegrationHub Comm Plan
+2. Next to the Communication Plan, click **Edit** > **Integration Builder**
+3. Click **Edit Endpoints**, then click **ServiceNow**
+4. Change the *Base URL* to the URL of your ServiceNow instance
+5. Hit **Save Changes** then **Close**
+### Change the default recipients
+1. Open the *Inbound Integrations* dropdown, and select **ServiceNow IntegrationHub Inbound**
+2. Click **Open Script Editor** near the center of the page
+3. Navigate to line 21, and change the *Default Recipients* to the name of the xMatters group you would like to notify by default
+4. Hit **Save**. Your IntegrationHub flow will now fire to xMatters and notify your default recipients with the response options defined in the form! Happy Integrating!
 
 
 # Testing
