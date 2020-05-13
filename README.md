@@ -2,40 +2,42 @@
 IntegrationHub is a feature in ServiceNow that makes integrating to third-party (in this example, xMatters) apps easier than ever before, and the best part about it? No coding! Well, at least minimal... With this inbound integration, you can set up a trigger from any (that's right, any!) table and table entry to create an event in xMatters.
 
 <kbd>
-  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+<a href="https://support.xmatters.com/hc/en-us/community/topics">
+   <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+</a>
 </kbd>
 
 # Pre-Requisites
 * ServiceNow instance, with IntegrationHub purchased and installed - if you don't have IntegrationHub, see details on how to get it [here](https://docs.servicenow.com/bundle/kingston-servicenow-platform/page/administer/integrationhub/tasks/request-integrationhub.html)
-* Existing communications plan - Use this packaged integration from the integrations page, or build your own
+* Existing workflow - Use this packaged integration from the integrations page, or build your own
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
-* [ExampleCommPlan.zip](ExampleCommPlan.zip) - This is an example comm plan to help get started. 
+* [ExampleWorkflow.zip](ExampleWorkflow.zip) - This is an example workflow to help get started. 
 * [EmailMessageTemplate.html](EmailMessageTemplate.html) - This is an example HTML template for emails and push messages. 
 * [Payload](PayloadBody.png) - An example payload body to use in ServiceNow
 
 # How it works
-Add some info here detailing the overall architecture and how the integration works. The more information you can add, the more helpful this sections becomes. For example: An action happens in Application XYZ which triggers the thingamajig to fire a REST API call to the xMatters inbound integration on the imported communication plan. The integration script then parses out the payload and builds an event and passes that to xMatters. 
+Add some info here detailing the overall architecture and how the integration works. The more information you can add, the more helpful this sections becomes. For example: An action happens in Application XYZ which triggers the thingamajig to fire a REST API call to the xMatters inbound integration on the imported Workflow. The integration script then parses out the payload and builds an event and passes that to xMatters. 
 
 # Installation
 ## In xMatters:
-### Setting up the Communication Plan
-1. Download the [zip file](ExampleCommPlan.zip) onto your computer
+### Setting up the Workflow
+1. Download the [zip file](ExampleWorkflow.zip) onto your computer
 2. Log in to xMatters and navigate to the **DEVELOPER** tab
 3. Click **Import Plan** and select the zip file you just downloaded, then click **Import Plan**
-4. On the righthand side of the Communication Plan you just imported, click **Edit** > **Integration Builder**
+4. On the righthand side of the Workflow you just imported, click **Edit** > **Integration Builder**
 5. Next to **Inbound Integrations**, open the dropdown menu by clicking the blue **1 Configured**, then click **ServiceNow IntegrationHub Inbound**
 6. At the bottom of the page, copy the request URL to something accessible
-### Setting up an account to access the Communication Plan
+### Setting up an account to access the Workflow
 1. Navigate to the **USERS** tab
 2. Click **Add** on the righthand side
 3. Give the user a first and last name (e.g. ServiceNow IntegrationHub), user ID (username used for logging in) and password, and give it the *REST Web Service User* role, then click **Add**
-4. Navigate back to the **DEVELOPER** tab and next to the Communication Plan you just imported, click **Edit** > **Access Permissions**, then type the user ID of the account you just created, select the account, and click **Save Changes**. Alternatively, you can select **Accessible by All**, however this allows all users in your xMatters instance to view and edit the Communication Plan
+4. Navigate back to the **DEVELOPER** tab and next to the Workflow you just imported, click **Edit** > **Access Permissions**, then type the user ID of the account you just created, select the account, and click **Save Changes**. Alternatively, you can select **Accessible by All**, however this allows all users in your xMatters instance to view and edit the Workflow
 ## In ServiceNow:
 ### Option 1: Setting it up yourself
 #### Setting up a Credential and Connection Alias:
-Now that you have an xMatters Communication Plan, we need to set up a Connection alias in ServiceNow to connect quickly and easily to the Comm Plan
+Now that you have an xMatters Workflow, we need to set up a Connection alias in ServiceNow to connect quickly and easily to the Workflow
 1. Log in to your ServiceNow instance
 
 2. In the *Filter navigator*, search for "alias", and select **Connection & Credential aliases**
@@ -60,7 +62,7 @@ Now that you have an xMatters Communication Plan, we need to set up a Connection
 <img src="media/add credential.png">
 </kbd>
 
-7. Give the Credential a *Name*, and enter the *User* and *Password* for the xMatters account with access to the Communication Plan, then click **Submit** to finish
+7. Give the Credential a *Name*, and enter the *User* and *Password* for the xMatters account with access to the Workflow, then click **Submit** to finish
 <kbd>
 <img src="media/define credential.png">
 </kbd>
@@ -86,7 +88,7 @@ Now that you have an xMatters Communication Plan, we need to set up a Connection
 <img src="media/create connection.png">
 </kbd>
 
-13. Paste the URL you copied from the xMatters Communication Plan into the **Connection URL** box, then Submit
+13. Paste the URL you copied from the xMatters Workflow into the **Connection URL** box, then Submit
 <kbd>
 <img src="media/define connection.png">
 </kbd>
@@ -120,7 +122,7 @@ Now you have a working Connection Alias that we can use to easiliy communicate t
 <img src="media/rest step connection.png">
 </kbd>
 
-7. From the dropdown menu next to **HTTP Method**, select *POST* (the Base URL is grayed out because it is already defined in the Connection Alias). We will not need to fill anything in for **Resource Path** in this example because the full URL from the Communication Plan is in the Connection Alias. However, if you would like to set up multiple integrations using IntegrationHub, it may be a good idea to define the URL in the Connection Alias as being ```https://example.xmatters.com/api/integration/1/functions/``` (with example being replaced with your instance), and then you could create multiple inbound integrations and have different actions use different inbound integration URLs by using the same Connection alias, and only change the Resource Path to ```[API key]/triggers``` .
+7. From the dropdown menu next to **HTTP Method**, select *POST* (the Base URL is grayed out because it is already defined in the Connection Alias). We will not need to fill anything in for **Resource Path** in this example because the full URL from the Workflow is in the Connection Alias. However, if you would like to set up multiple integrations using IntegrationHub, it may be a good idea to define the URL in the Connection Alias as being ```https://example.xmatters.com/api/integration/1/functions/``` (with example being replaced with your instance), and then you could create multiple inbound integrations and have different actions use different inbound integration URLs by using the same Connection alias, and only change the Resource Path to ```[API key]/triggers``` .
 
 8. For headers, use *Content-Type* under **Name**, and *application/json* under **Value**
 
@@ -204,13 +206,13 @@ There you have it! Once you have made all the changes you want to the body and t
 <img src="media/example user.png">
 </kbd>
 
-10. Change the *Username* and *Password* to the account that can access the Communication Plan in xMatters, and then click **Update**
+10. Change the *Username* and *Password* to the account that can access the Workflow in xMatters, and then click **Update**
 11. Click the back button, and open the **Example Connection**, then click **New** next to the *Connections* list
 <kbd>
 <img src="media/example connection.png">
 </kbd>
 
-12. Give the Connection a *Name*, select the *Credential* you just changed, then fill in the *Connection URL* with the URL from your xMatters Communication Plan, and click **Update**
+12. Give the Connection a *Name*, select the *Credential* you just changed, then fill in the *Connection URL* with the URL from your xMatters Workflow, and click **Update**
 <kbd>
 <img src="media/example connection builder.png">
 </kbd>
@@ -248,8 +250,8 @@ There you have it! Make sure to hit **Publish** on the Action to commit the chan
 
 ## xMatters set up
 ### Change the endpoint
-1. Navigate to the **DEVELOPER** tab, and locate the ServiceNow IntegrationHub Comm Plan
-2. Next to the Communication Plan, click **Edit** > **Integration Builder**
+1. Navigate to the **DEVELOPER** tab, and locate the ServiceNow IntegrationHub Workflow
+2. Next to the Workflow, click **Edit** > **Integration Builder**
 3. Click **Edit Endpoints**, then click **ServiceNow**
 4. Change the *Base URL* to the URL of your ServiceNow instance
 5. Hit **Save Changes** then **Close**
@@ -261,7 +263,7 @@ There you have it! Make sure to hit **Publish** on the Action to commit the chan
 
 
 # Testing
-To test the Flow, you can use the Test button and add an input incident, then in xMatters navigate to the communication plan and hit **Edit** > **Integration Builder**, then on the righthand side of the Inbound integration to ServiceNow IntegrationHub, click the gear icon and select **Activity Stream**. In the Activity Stream, you should be able to see a successful POST and an email should be sent to the recipients.
+To test the Flow, you can use the Test button and add an input incident, then in xMatters navigate to the workflow and hit **Edit** > **Integration Builder**, then on the righthand side of the Inbound integration to ServiceNow IntegrationHub, click the gear icon and select **Activity Stream**. In the Activity Stream, you should be able to see a successful POST and an email should be sent to the recipients.
 
 # Troubleshooting
 The most difficult part about setting up an integration with IntegrationHub using the "Content-Type: application/json" header is definitely setting up the body. Using the click and drag GUI has its advantages, but it makes the body very difficult to reproduce. Some pointers:
